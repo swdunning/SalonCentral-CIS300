@@ -36,19 +36,48 @@ footer {
 
 #salonLogo {
     height: 90px;
-    width: 240px;
+    width: 220px;
     float: left;
     margin-left: 10px;
-    border: solid 4px #330000;
+    border: solid 3px #D40C0C;
+}
+
+#fblogo {
+    float: right;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+#twlogo {
+    float: right;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+#yplogo {
+    float: right;
+    height: 30px;
+    padding-right: 20px;
+    padding-top: 30px;
 }
 
 #slogan {
     margin-right: 260px;
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
     font-style: italic;
-    font-size: 24px;
-    font-family: "Arizonia", "Marck Script";
+    font-size: 26px;
+    color: #B09A00;
+    font-family: "Marck Script", cursive;
+}
+
+#contactHead {
+    margin-right: 12px;
+    margin-top: 10px;
+    float: right;
+    font-size: 12px;
+    color: #FFFFFF;
+    font-family: Arial, helvetica, sans-serif;
 }
 
 header {
@@ -80,7 +109,7 @@ h3 {
 
 
 #salonBuilding {
-    margin: 10px 190px 10px 190px;
+    margin: 20px 190px 10px 190px;
     height: 500px;
     background: url("assets/salon_central/salon_central_withADS.png") no-repeat;
     background-size: 100% 100%;
@@ -119,7 +148,9 @@ nav {
 }
 
 nav li {
-    padding-bottom: 0.75em;
+    border-bottom: solid 2px #000000;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
 }
 
 nav a {
@@ -218,28 +249,35 @@ input [type="submit"] {
     }
     nav {
         margin-top: 10px;
+        margin-bottom: 0;
         float: none;
         width: auto;
         text-align: center;
-        padding: 0.5em;
-        border-bottom: 1px solid #000000;
-        border-top: 1px solid #000000;
+        padding-top: 0.25em;
+        padding-bottom: 0.3em;
     }
     nav li {
         display: inline;
+        border-right:1px solid #000000;
+
         padding: 0.25em 0.75em 0.25em 0.75em;
     }
+
+
     #salonLogo {
         width: 160px;
     }
     #slogan {
         font-size: 20px;
         margin-right: 160px;
+        margin-top: 10px;
     }
     #salonBuilding {
+        background: url("assets/salon_central/salon_central_render-75.jpg") no-repeat;
         margin-left: 0;
         margin-right: 0;
         height: 400px;
+        background-size: 100% 100%;
     }
     #yurthero {
         margin-left: 0;
@@ -292,7 +330,16 @@ input [type="submit"] {
     }
 
     #salonLogo {
-        margin-left: 100px;
+        margin-left: 110px;
+    }
+    #fblogo {
+        display: none;
+    }
+    #twlogo {
+        display: none;
+    }
+    #yplogo {
+        display: none;
     }
 
     #homehero {
