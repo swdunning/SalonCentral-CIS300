@@ -16,6 +16,7 @@ body {
 }
 
 #contact {
+    float:bottom;
     font-size: 90%;
 }
 
@@ -114,7 +115,6 @@ h3 {
     background: url("assets/salon_central/salon_central_withADS.png") no-repeat;
     background-size: 100% 100%;
     border: solid 1px #000000;
-    border-radius: 2px;
     box-shadow: 3px 3px 3px #333333;
 }
 
@@ -135,10 +135,46 @@ h3 {
 main {
     margin-left: 190px;
     margin-right: 190px;
-    background: #FFFFFF;
+    height:500px;
+    background: #000000;
     padding: 1px 20px 20px 30px;
     display:block;
 }
+
+#furnishedBox {
+    float:left;
+    margin:10px 0 10px 10px;
+    width: 260px;
+    max-width:260px;
+} .homeMoreInfo {
+    font-size: 16px;
+    color: #FFFFFF;
+    border-bottom: 2px solid #333333;
+    margin-bottom: 10px;
+} .homeInfoPic {
+    height: 280px;
+    width: 260px;
+    border: solid 1px #FFFFFF;
+    border-radius: 10px;
+} .homeInfoText {
+    color:#FFFFFF;
+    font-size: 14px;
+  }
+#amenitiesBox {
+    float:left;
+    margin-top: 10px;
+    margin-left: 50px;
+    width:260px;
+    max-width:260px;
+}
+#customizeBox {
+    float:left;
+    margin-top: 10px;
+    margin-left: 50px;
+    width:260px;
+    max-width:260px;
+}
+
 
 nav {
     float: left;
@@ -200,15 +236,12 @@ tr:nth-of-type(odd) {
     background-color: #F5FAFC;
 }
 
-main ul {
-    list-style-image: url("assets/placeholders/marker.gif");
-}
 
 #wrapper {
     width: 80%;
     background: linear-gradient(to bottom, #D40C0C, #0C034A) no-repeat #0C034A;
     /*background-color: #130864;*/
-    min-width: 960px;
+    min-width: 1350px;
     max-width: 2048px;
     margin: auto;
     box-shadow: 3px 3px 3px #333333;
@@ -263,6 +296,18 @@ input [type="submit"] {
         padding: 0.25em 0.75em 0.25em 0.75em;
     }
 
+    #furnishedBox {
+        max-width: 220px;
+        margin-left: 20px;
+    }
+    #customizeBox, #amenitiesBox {
+         max-width: 220px;
+         margin-left: 40px;
+     }
+    .homeInfoPic {
+        max-width: 220px;
+        height: 240px;
+    }
 
     #salonLogo {
         width: 160px;
