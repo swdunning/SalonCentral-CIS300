@@ -1,0 +1,317 @@
+header, main, nav, footer, figure, figcaption, aside, section, article {
+    display: block;
+}
+
+#desktop {
+    display: inline;
+}
+
+#mobile {
+    display: none;
+}
+
+body {
+    background: linear-gradient(to bottom, #FFFFFF, #4F6D93) no-repeat #4F6D93;
+    color: #666666;
+}
+
+#contact {
+    font-size: 90%;
+}
+
+dt {
+    color: #000033;
+}
+
+footer {
+    background: #FFFFFF;
+    margin-left: 190px;
+    margin-right: 190px;
+    padding: 20px;
+    font-size: 75%;
+    font-style: italic;
+    text-align: center;
+    font-family: Georgia, "Times New Roman", Serif;
+}
+
+#salonLogo {
+    height: 90px;
+    width: 240px;
+    float: left;
+    margin-left: 10px;
+    border: solid 4px #330000;
+}
+
+#slogan {
+    margin-right: 260px;
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    font-family: "Arizonia", "Marck Script";
+}
+
+header {
+    font-family: Arial, helvetica, sans-serif;
+    color: #FFFFFF;
+    height: 110px;
+    padding-top: 10px;
+    background: #000000;
+}
+
+
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-family: Georgia, "Times New Roman", Serif;
+}
+
+h2 {
+    color: #3399CC;
+    box-shadow: 1px 1px 1px #cccccc;
+    font-family: Georgia, "Times New Roman", Serif;
+}
+
+h3 {
+    font-family: Georgia, "Times New Roman", Serif;
+    color: #000000;
+}
+
+
+#salonBuilding {
+    margin: 10px 190px 10px 190px;
+    height: 500px;
+    background: url("assets/salon_central/salon_central_withADS.png") no-repeat;
+    background-size: 100% 100%;
+    border: solid 1px #000000;
+    border-radius: 2px;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+#yurthero {
+    margin-left: 190px;
+    height: 300px;
+    background: url("assets/placeholders/yurthero.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+#trailhero {
+    margin-left: 190px;
+    height: 300px;
+    background: url("assets/placeholders/trailhero.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+
+main {
+    margin-left: 190px;
+    margin-right: 190px;
+    background: #FFFFFF;
+    padding: 1px 20px 20px 30px;
+    display:block;
+}
+
+nav {
+    float: left;
+    width: 160px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+nav li {
+    padding-bottom: 0.75em;
+}
+
+nav a {
+    text-decoration: none;
+}
+nav a:link {
+    color: #000033;
+}
+nav a:visited {
+    color: #FFFFFF;
+}
+nav a:hover {
+    color: #000000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+
+.resort {
+    font-weight: bold;
+    color: #5C7FA3;
+}
+
+table {
+    border: 1px solid #3399CC;
+    width: 80%;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 5px;
+    border: 1px solid #3399CC;
+}
+td {
+    text-align: center;
+}
+
+.text {
+    text-align: left;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+main ul {
+    list-style-image: url("assets/placeholders/marker.gif");
+}
+
+#wrapper {
+    width: 80%;
+    background: linear-gradient(to bottom, #D40C0C, #0C034A) no-repeat #0C034A;
+    /*background-color: #130864;*/
+    min-width: 960px;
+    max-width: 2048px;
+    margin: auto;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 4px;
+}
+
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input [type="submit"] {
+    margin-left: 130px;
+}
+
+/*Tablet Media Display*/
+@media only screen and (max-width: 64em) {
+    body {
+        margin:0;
+        background: #FFFFFF;
+    }
+    #wrapper {
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+    main {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    nav {
+        margin-top: 10px;
+        float: none;
+        width: auto;
+        text-align: center;
+        padding: 0.5em;
+        border-bottom: 1px solid #000000;
+        border-top: 1px solid #000000;
+    }
+    nav li {
+        display: inline;
+        padding: 0.25em 0.75em 0.25em 0.75em;
+    }
+    #salonLogo {
+        width: 160px;
+    }
+    #slogan {
+        font-size: 20px;
+        margin-right: 160px;
+    }
+    #salonBuilding {
+        margin-left: 0;
+        margin-right: 0;
+        height: 400px;
+    }
+    #yurthero {
+        margin-left: 0;
+        height: 200px;
+    }
+    #trailhero {
+        margin-left: 0;
+        height: 200px;
+    }
+    footer {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/*Smartphone Media Display*/
+@media only screen and (max-width: 37.5em) {
+    header {
+        padding-top: 1em;
+    }
+    main {
+        font-size: 90%;
+        padding: 0.1em 1em 0.1em 1em;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        border-bottom: 2px solid #330000;
+    }
+    nav a {
+        display: block;
+    }
+
+    label {
+        float: none;
+        text-align: left;
+    }
+    input [type="submit"] {
+        margin-left: 0;
+    }
+
+    #slogan {
+        display: none;
+    }
+
+    #salonLogo {
+        margin-left: 100px;
+    }
+
+    #homehero {
+        background-image: none;
+        height: 0;
+    }
+    #yurthero {
+        background-image: none;
+        height: 0;
+    }
+    #trailhero {
+        background-image: none;
+        height: 0;
+    }
+    #mobile {
+        display: inline;
+    }
+    #desktop {
+        display: none;
+    }
+
+}
