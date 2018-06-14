@@ -25,7 +25,8 @@ dt {
 }
 
 footer {
-    background: #FFFFFF;
+    background: #000000;
+    color: #FFFFFF;
     margin-left: 190px;
     margin-right: 190px;
     padding: 20px;
@@ -118,20 +119,6 @@ h3 {
     box-shadow: 3px 3px 3px #333333;
 }
 
-#yurthero {
-    margin-left: 190px;
-    height: 300px;
-    background: url("assets/placeholders/yurthero.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-
-#trailhero {
-    margin-left: 190px;
-    height: 300px;
-    background: url("assets/placeholders/trailhero.jpg") no-repeat;
-    background-size: 100% 100%;
-}
-
 main {
     margin-left: 190px;
     margin-right: 190px;
@@ -140,6 +127,45 @@ main {
     padding: 1px 20px 20px 30px;
     display:block;
 }
+
+main_about {
+
+    background-color: #FFFFFF;
+    margin-left: 190px;
+    margin-right: 190px;
+    height:840px;
+    padding: 1px 20px 20px 30px;
+    display:block;
+}
+#aboutDivID {
+    margin: 40px 10px 0 10px;
+    background: url("assets/background_img/vintage-concrete.png") repeat;
+    box-shadow: 4px 4px 20px #333333;
+    height: 400px;
+}
+#aboutH1 {
+    padding: 40px 0 0 0;
+    color: #000000;
+    text-align: center;
+    text-shadow: 2px 2px #FFF000;
+}
+#aboutH2 {
+    margin: 20px 40px 0 40px;
+    color: #D40C0C;
+    text-align: center;
+    font-size: 28px;
+}
+#aboutMainText {
+    margin: 20px 40px 0 40px;
+    color: #000000;
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+}
+
+
+
+
 
 #furnishedBox {
     float:left;
@@ -301,6 +327,9 @@ tr:nth-of-type(odd) {
     margin: auto;
     box-shadow: 3px 3px 3px #333333;
 }
+#wrapper_aboutUs {
+
+}
 
 
 label {
@@ -424,14 +453,10 @@ input [type="submit"] {
         height: 400px;
         background-size: 100% 100%;
     }
-    #yurthero {
-        margin-left: 0;
-        height: 200px;
+    #wrapper {
+        min-width: 850px;
     }
-    #trailhero {
-        margin-left: 0;
-        height: 200px;
-    }
+
     footer {
         margin-left: 0;
         margin-right: 0;
@@ -487,18 +512,6 @@ input [type="submit"] {
         display: none;
     }
 
-    #homehero {
-        background-image: none;
-        height: 0;
-    }
-    #yurthero {
-        background-image: none;
-        height: 0;
-    }
-    #trailhero {
-        background-image: none;
-        height: 0;
-    }
     #mobile {
         display: inline;
     }
