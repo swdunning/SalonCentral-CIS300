@@ -133,21 +133,22 @@ main_about {
     background-color: #FFFFFF;
     margin-left: 190px;
     margin-right: 190px;
-    height:840px;
+    height:auto;
     padding: 1px 20px 20px 30px;
     display:block;
 }
-#aboutDivID {
-    margin: 40px 10px 0 10px;
+.aboutDivID {
     background: url("assets/background_img/vintage-concrete.png") repeat;
+    margin: 40px 10px 0 10px;
     box-shadow: 4px 4px 20px #333333;
-    height: 400px;
+    height: auto;
 }
 #aboutH1 {
-    padding: 40px 0 0 0;
+    padding: 30px 0 0 0;
     color: #000000;
     text-align: center;
-    text-shadow: 2px 2px #FFF000;
+    text-shadow: 1px 1px #D00000;
+
 }
 #aboutH2 {
     margin: 20px 40px 0 40px;
@@ -162,7 +163,62 @@ main_about {
     font-size: 22px;
     font-style: italic;
 }
+#aboutDiv2ID {
+    height: auto;
+    padding-bottom: 60px;
+    background: url("assets/background_img/vintage-concrete.png") repeat;
+    margin: 40px 10px 0 10px;
+    box-shadow: 4px 4px 20px #333333;
+}
+#aboutSocial_H2 {
+    float:inside;
+    min-width: 500px;
+    max-width: 500px;
+    margin:0;
+    padding: 10px;
+    color: #3399CC;
+    font-size: 1.8em;
+    text-align: left;
+    font-family:  "Times New Roman", Georgia, Serif;
+}
+#aboutSocialText {
+    float:left;
+    min-width: 500px;
+    max-width: 500px;
+    margin: 0;
+    padding: 10px 0 10px 10px;
+    font-size: 1.1em;
+    color: #000000;
+    text-align: left;
+    font-family:  "Times New Roman", Georgia, Serif;
+}
+#aboutSocialPicsDiv {
+    float: inherit;
+}
+.aboutSocialPics {
+    padding: 0 0 0 20px;
+    height: 100px;
+}
 
+#aboutDiv3ID {
+    height: auto;
+    padding-bottom: 20px;
+    background: url("assets/background_img/vintage-concrete.png") repeat;
+    margin: 40px 10px 10px 10px;
+    box-shadow: 4px 4px 20px #333333;
+}
+#aboutLocationText {
+    float: inside;
+}
+#aboutLocationImage {
+    background: url("assets/salon_central/building/saloncentral-proofs-(58 of 58).jpg") no-repeat;
+    margin: 20px 20px 0 20px;
+    height: 280px;
+    width: 280px;
+    background-size: 100% 100%;
+    border: solid 1px #000000;
+    box-shadow: 3px 3px 3px #333333;
+}
 
 
 
@@ -405,6 +461,14 @@ input [type="submit"] {
         width: auto;
         box-shadow: none;
     }
+    #aboutDivID {
+        min-width: 580px;
+    }
+
+    main_about {
+        min-width: 600px;
+    }
+
     main {
         margin-left: 0;
         margin-right: 0;
