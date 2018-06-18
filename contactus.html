@@ -9,68 +9,99 @@
         <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>Pacific Trails Resort:: Reservations</title>
+    <title>Salon Central :: Contact Us</title>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <h1> Pacific Trails Resort </h1>
+            <img src="assets/salon_central/salon_central_logo-wbk.jpg" id="salonLogo">
+            <!-- <p id="contactHead">Call For Pricing & Specials <br> Phone: (602) 942-2222</p>-->
+            <a href="https://www.yelp.com/biz/salon-central-peoria-3?osq=salon+central"> <img src="assets/salon_central/yelp_logo.png" id="yplogo"></a>
+            <a href="https://www.twitter.com"><img src="assets/salon_central/twitter_logo.png" id="twlogo"></a>
+            <a href="https://www.facebook.com/SalonCentralSuites"><img src="assets/salon_central/facebook_logo3.png" id="fblogo"></a>
+            <p id="slogan"> Family owned & <br> operated Salon Suites </p>
         </header>
 
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li id="navhome"><a href="index.html">Home</a></li>
                 <li><a href="aboutus.html">About Us</a></li>
                 <li><a href="specials.html">Specials/Amenities</a></li>
                 <li><a href="contactus.html">Contact Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="application.html">Application</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="directory.html">Directory</a></li>
             </ul>
         </nav>
 
-        <main>
-            <h2>Reservations at Pacific Trails</h2>
-            <h3>Contact Us Today!</h3>
+        <main_contact>
+            <h1 id="contactH1">CONTACT US FOR LEASING INFO</h1>
+            <h3 id="contactH3">SALON CENTRAL IS CURRENTLY OFFERING AMAZING SPECIALS!</h3>
 
-            <p>Required fields are marked with an asterisk *.</p>
-            <form method="post" action="http://webdevbasics.net/scripts/pacific.php">
-                <label for="myFName">* First Name</label>
-                <input id="myFName" name="myFName" required="required">
-
-                <label for="myLName">* Last Name</label>
-                <input id="myLName" name="myLName" required="required">
-
-                <label for="myEmail">* E-Mail Address</label>
-                <input id="myEmail" name="myEmail" size="35" required="required" type="email">
-
-                <label for="myPhone">Phone Number</label>
-                <input id="myPhone" name="myPhone" maxlength="12" type="tel">
-
-                <label for="myDate">Arrival Date</label>
-                <input id="myDate" name="myDate" maxlength="12" type="date">
-
-                <label for="mySpinner">Nights</label>
-                <input id="mySpinner" name="mySpinner" maxlength="12" type="number" min="1" max="14">
-
-                <label for="myComments">* Comments</label>
-                <textarea id="myComments" name="myComments" maxlength="12"
-                          rows="2" cols="30" required="required"></textarea>
-
-                <input type="submit" value="Submit">
-            </form>
+            <p id="contactMainText"> <strong>
+                Starting with: <br>
+                Your first 6 weeks completely FREE! <br>
+                An additional week FREE EVERY YEAR! <br>
+                Competitive prices, lease a suite for around the same price as a chair! <br>
+                You can contact us below OR Call, Text, Email us @ <br>
+                602-942-2222 <br>
+                SalonCentral@cox.net
+            </strong></p>
 
 
-            <div id="contact"><br>
+
+            <div id="contactFormDiv">
+                <form id="contactForm" method="post" action="http://webdevbasics.net/scripts/pacific.php">
+                    <div id="contactFormHead">
+                        <h3>CONTACT US:</h3>
+                        <p id="contactFormText"> TO SCHEDULE A TOUR OF OUR AVAILABLE SUITES, FIND OUT PRICING
+                            <br>AND/OR SPECIALS PLEASE CONTACT US BELOW.<br><br> </p>
+                    </div>
+                    <label for="myFName">* First Name</label>
+                    <input id="myFName" name="myFName" required="required">
+
+                    <label for="myLName">* Last Name</label>
+                    <input id="myLName" name="myLName" required="required">
+
+                    <label for="myEmail">* E-Mail Address</label>
+                    <input id="myEmail" name="myEmail" size="35" required="required" type="email">
+
+                    <label for="myPhone">Phone Number</label>
+                    <input id="myPhone" name="myPhone" maxlength="12" type="tel">
+
+                    <label for="myDate">Arrival Date</label>
+                    <input id="myDate" name="myDate" maxlength="12" type="date">
+
+                    <label for="mySpinner">Nights</label>
+                    <input id="mySpinner" name="mySpinner" maxlength="12" type="number" min="1" max="14">
+
+                    <label for="myComments">* Comments</label>
+                    <textarea id="myComments" name="myComments" maxlength="12"
+                              rows="2" cols="30" required="required"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+            <div >
+                <div id="contactImg1" class="contactImgDiv"></div>
+                <div id="contactImg2" class="contactImgDiv"></div>
+            </div>
+
+            <!--<div id="contact"><br>
                 <span class="resort"> Pacific Trails Resort</span> <br>
                 12010 Pacific Trails Road <br>
                 Zephyr, CA 95555 <br>
                 <a id="mobile" href="tel:888-555-5555"> 888-555-5555 </a>
                 <span id="desktop">888-555-5555</span>
-            </div>
-        </main>
+            </div>-->
+        </main_contact>
 
         <footer>
-            Copyright &copy; 2016 Pacific Trails Resort <br>
-            <a href="scott@dunning.com">scott@dunning.com</a>
+            Copyright &copy; 2018 Salon Central Suites <br>
+            <a href="saloncentral@cox.net">saloncentral@cox.net</a>
         </footer>
     </div>
 </body>

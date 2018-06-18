@@ -11,7 +11,7 @@ header, main, nav, footer, figure, figcaption, aside, section, article {
 }
 
 body {
-    background: linear-gradient(to bottom, #FFFFFF, #4F6D93) no-repeat #4F6D93;
+    background: linear-gradient(to bottom, #4F6D93, #FFFFFF) no-repeat #4F6D93;
     color: #666666;
 }
 
@@ -88,6 +88,7 @@ header {
     height: 110px;
     padding-top: 10px;
     background: #000000;
+    border-bottom: 4px solid #D00000;
 }
 
 
@@ -111,7 +112,7 @@ h3 {
 
 
 #salonBuilding {
-    margin: 20px 190px 10px 190px;
+    margin: 40px 190px 10px 190px;
     height: 500px;
     background: url("assets/salon_central/salon_central_withADS.png") no-repeat;
     background-size: 100% 100%;
@@ -128,9 +129,9 @@ main {
     display:block;
 }
 
-main_about {
 
-    background-color: #FFFFFF;
+main_about {
+    background-color: #000000;
     margin-left: 190px;
     margin-right: 190px;
     height:auto;
@@ -140,15 +141,18 @@ main_about {
 .aboutDivID {
     background: url("assets/background_img/vintage-concrete.png") repeat;
     margin: 40px 10px 0 10px;
-    box-shadow: 4px 4px 20px #333333;
+    border: 1px solid black;
+    box-shadow: 4px 4px 14px 2px #A9A9A9;
     height: auto;
 }
 #aboutH1 {
-    padding: 30px 0 0 0;
-    color: #000000;
+    font-size: 48px;
     text-align: center;
-    text-shadow: 1px 1px #D00000;
-
+    padding: 30px 0 0 0;
+    background-color: #000000;
+    color: transparent;
+    text-shadow: 0px 3px 4px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
 }
 #aboutH2 {
     margin: 20px 40px 0 40px;
@@ -168,14 +172,14 @@ main_about {
     padding-bottom: 60px;
     background: url("assets/background_img/vintage-concrete.png") repeat;
     margin: 40px 10px 0 10px;
-    box-shadow: 4px 4px 20px #333333;
+    border: 1px solid black;
+    box-shadow: 4px 4px 14px 2px #A9A9A9;
 }
 #aboutSocial_H2 {
-    float:inside;
     min-width: 500px;
     max-width: 500px;
-    margin:0;
-    padding: 10px;
+    margin:0 0 0 40px;
+    padding: 20px 10px 10px 10px;
     color: #3399CC;
     font-size: 1.8em;
     text-align: left;
@@ -183,44 +187,162 @@ main_about {
 }
 #aboutSocialText {
     float:left;
-    min-width: 500px;
-    max-width: 500px;
-    margin: 0;
+    min-width: 460px;
+    max-width: 460px;
+    margin:0 0 0 40px;
     padding: 10px 0 10px 10px;
     font-size: 1.1em;
     color: #000000;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
     font-family:  "Times New Roman", Georgia, Serif;
 }
 #aboutSocialPicsDiv {
     float: inherit;
+    box-shadow: 4px 4px 20px #333333;
 }
 .aboutSocialPics {
-    padding: 0 0 0 20px;
+    padding: 10px 0 10px 20px;
     height: 100px;
 }
 
-#aboutDiv3ID {
+.aboutLocationsBG {
     height: auto;
-    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 400px;
     background: url("assets/background_img/vintage-concrete.png") repeat;
     margin: 40px 10px 10px 10px;
-    box-shadow: 4px 4px 20px #333333;
+    border: 1px solid black;
+    box-shadow: 4px 4px 14px 2px #A9A9A9;
 }
 #aboutLocationText {
-    float: inside;
+    margin-top: 10px;
+    color: #000000;
+    text-align: center;
+    font-size: 38px;
 }
-#aboutLocationImage {
+.aboutLocationImage {
+    border-radius: 15px;
+    border: 12px solid #ffffff;
+    height: 300px;
+    width: 340px;
+    box-shadow: 4px 5px 18px #6A0000;
+}
+#aboutPhxDiv {
+    float: left;
+    margin: 0 0 0 40px;
+    min-width: 400px;
+    max-width: 400px;
+}
+#aboutPhxImage {
     background: url("assets/salon_central/building/saloncentral-proofs-(58 of 58).jpg") no-repeat;
     margin: 20px 20px 0 20px;
-    height: 280px;
-    width: 280px;
     background-size: 100% 100%;
-    border: solid 1px #000000;
-    box-shadow: 3px 3px 3px #333333;
+}
+#locationsButtonPhx {
+    margin: 20px 20px 0 20px;
+    background-color: #D40C0C;
+    box-shadow: 2px 5px 10px black;
+    color: white;
+    padding: .5em 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#locationsButtonPhx:hover {
+    background-color: #ce0606;
+}
+#locationsButtonPhx:active {
+    box-shadow: none;
+    top: 5px;
+}
+
+#aboutPeoriaDiv {
+    float: left;
+    margin: 0 0 0 0;
+    padding-left: 0;
+    min-width: 400px;
+    max-width: 400px;
+}
+#aboutPeoriaImage {
+    background: url("assets/salon_central/building/saloncentral-proofs-(34 of 58).jpg") no-repeat;
+    margin: 20px 20px 0 20px;
+    background-size: 100% 100%;
+}
+#locationsButtonPeoria {
+    margin: 20px 20px 0 20px;
+    background-color: #D40C0C;
+    box-shadow: 2px 5px 10px black;
+    color: white;
+    padding: .5em 1em;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#locationsButtonPeoria:hover {
+    background-color: #ce0606;
+}
+#locationsButtonPeoria:active {
+    box-shadow: none;
+    top: 5px;
 }
 
 
+main_contact {
+    background-color: #ffffff;
+    margin: 0 190px 0 190px;
+    height: auto;
+    padding: 1px 20px 80px 30px;
+    display:block;
+}
+#contactH1 {
+    font-size: 38px;
+    text-align: center;
+    padding: 30px 0 0 0;
+    background-color: #000000;
+    color: transparent;
+    text-shadow: 0px 3px 4px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+}
+#contactH3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    color: #D40C0C;
+}
+#contactMainText {
+    text-align: center;
+    color: #000000;
+    font-size: 18px;
+}
+#contactFormDiv {
+    float: right;
+    padding: 20px;
+    border-top: 60px solid #333333;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    border-left: 2px solid #000000;
+}
+#contactFormText {
+    font-size: 14px;
+}
+
+.contactImgDiv {
+    height: 300px;
+    width: 380px;
+    margin: 20px 40px 0 0;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    box-shadow: 0 10px 80px black;
+}
+#contactImg1 {
+    background: url("assets/salon_central/suites/saloncentral-proofs- (44 of 58).jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#contactImg2 {
+    background: url("assets/salon_central/suites/saloncentral-proofs- (26 of 58).jpg") no-repeat;
+    background-size: 100% 100%;
+}
 
 
 #furnishedBox {
@@ -314,6 +436,7 @@ main_about {
 
 
 nav {
+    margin-top: 20px;
     float: left;
     width: 160px;
     font-weight: bold;
@@ -321,6 +444,7 @@ nav {
 }
 
 nav li {
+    color: #FFFFFF;
     border-bottom: solid 2px #000000;
     padding-bottom: 0.25em;
     padding-top: 0.25em;
@@ -330,7 +454,7 @@ nav a {
     text-decoration: none;
 }
 nav a:link {
-    color: #000033;
+    color: #FFFFFF;
 }
 nav a:visited {
     color: #FFFFFF;
@@ -344,6 +468,9 @@ nav ul {
     margin: 0;
     padding-left: 0;
     font-size: 1.2em;
+}
+#navhome {
+    border-top: 2px solid #000000;
 }
 
 .resort {
