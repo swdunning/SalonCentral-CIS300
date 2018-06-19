@@ -59,29 +59,41 @@
                         <p id="contactFormText"> TO SCHEDULE A TOUR OF OUR AVAILABLE SUITES, FIND OUT PRICING
                             <br>AND/OR SPECIALS PLEASE CONTACT US BELOW.<br><br> </p>
                     </div>
-                    <label for="myFName">* First Name</label>
+                    <label class="formLbl" for="myFName">First Name *</label>
                     <input id="myFName" name="myFName" required="required">
 
-                    <label for="myLName">* Last Name</label>
+                    <label class="formLbl" for="myLName">Last Name *</label>
                     <input id="myLName" name="myLName" required="required">
 
-                    <label for="myEmail">* E-Mail Address</label>
+                    <label class="formLbl" for="myEmail">Email Address *</label>
                     <input id="myEmail" name="myEmail" size="35" required="required" type="email">
 
-                    <label for="myPhone">Phone Number</label>
-                    <input id="myPhone" name="myPhone" maxlength="12" type="tel">
+                    <label class="formLbl" for="myEmail">Confirm Email *</label>
+                    <input id="myEmailConfirm" name="myEmailConfirm" size="35" required="required" type="email">
 
-                    <label for="myDate">Arrival Date</label>
-                    <input id="myDate" name="myDate" maxlength="12" type="date">
+                    <label class="formLbl" for="myPhone">Phone Number *</label>
+                    <input id="myPhone" name="myPhone" maxlength="12" required="required" type="tel">
 
-                    <label for="mySpinner">Nights</label>
-                    <input id="mySpinner" name="mySpinner" maxlength="12" type="number" min="1" max="14">
-
-                    <label for="myComments">* Comments</label>
+                    <label class="formLbl" for="myComments">Message</label>
                     <textarea id="myComments" name="myComments" maxlength="12"
-                              rows="2" cols="30" required="required"></textarea>
+                              rows="2" cols="30"></textarea>
+                    <label class="formLbl" for="myDropDown">Profession *</label>
+                    <select id="myDropDown" name="myDropDown" required="required">
+                        <option value="hairstylists">Hair Stylists</option>
+                        <option value="NailTech">Nail Tech</option>
+                        <option value="massageTherapist">Massage Therapist</option>
+                        <option value="aesthetician">Aesthetician</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
 
-                    <input type="submit" value="Submit">
+                    <label class="formLbl" >Reason For Contacting *</label><br>
+                        <select id="dropDownReason" name="myDropDown" required="required">
+                            <option value="scheduleTour">Schedule a Tour</option>
+                            <option value="specials_pricing">Specials/Pricing</option>
+                            <option value="leasingInfo">Leasing Info</option>
+                            <option value="otherReason">Other</option>
+                        </select><br><br><br>
+                    <input class="infoButton" type="submit" value="Submit">
                 </form>
             </div>
 
@@ -90,13 +102,6 @@
                 <div id="contactImg2" class="contactImgDiv"></div>
             </div>
 
-            <!--<div id="contact"><br>
-                <span class="resort"> Pacific Trails Resort</span> <br>
-                12010 Pacific Trails Road <br>
-                Zephyr, CA 95555 <br>
-                <a id="mobile" href="tel:888-555-5555"> 888-555-5555 </a>
-                <span id="desktop">888-555-5555</span>
-            </div>-->
         </main_contact>
 
         <footer>

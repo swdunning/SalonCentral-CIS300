@@ -15,11 +15,6 @@ body {
     color: #666666;
 }
 
-#contact {
-    float:bottom;
-    font-size: 90%;
-}
-
 dt {
     color: #000033;
 }
@@ -43,7 +38,6 @@ footer {
     margin-left: 10px;
     border: solid 3px #D40C0C;
 }
-
 #fblogo {
     float: right;
     height: 30px;
@@ -62,7 +56,6 @@ footer {
     padding-right: 20px;
     padding-top: 30px;
 }
-
 #slogan {
     margin-right: 260px;
     margin-top: 10px;
@@ -73,14 +66,14 @@ footer {
     font-family: "Marck Script", cursive;
 }
 
-#contactHead {
+/*#contactHead {
     margin-right: 12px;
     margin-top: 10px;
     float: right;
     font-size: 12px;
     color: #FFFFFF;
     font-family: Arial, helvetica, sans-serif;
-}
+}*/
 
 header {
     font-family: Arial, helvetica, sans-serif;
@@ -247,7 +240,6 @@ main_about {
     padding: .5em 1em;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
 }
 #locationsButtonPhx:hover {
     background-color: #ce0606;
@@ -277,7 +269,6 @@ main_about {
     padding: .5em 1em;
     position: relative;
     text-decoration: none;
-    text-transform: uppercase;
 }
 #locationsButtonPeoria:hover {
     background-color: #ce0606;
@@ -317,14 +308,25 @@ main_contact {
 }
 #contactFormDiv {
     float: right;
-    padding: 20px;
-    border-top: 60px solid #333333;
+    padding: 10px 20px 10px 20px;
+    border: 60px solid #333333;
     border-right: 2px solid #000000;
     border-bottom: 2px solid #000000;
     border-left: 2px solid #000000;
 }
 #contactFormText {
     font-size: 14px;
+}
+.formLbl {
+    text-align: left;
+    font-weight: bold;
+    padding-right: 18px;
+}
+#myDropDown {
+    font-size: 16px;
+}
+#dropDownReason {
+    font-size: 16px;
 }
 
 .contactImgDiv {
