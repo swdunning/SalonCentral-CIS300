@@ -1,24 +1,19 @@
 header, main, nav, footer, figure, figcaption, aside, section, article {
     display: block;
 }
-
 #desktop {
     display: inline;
 }
-
 #mobile {
     display: none;
 }
-
 body {
     background: linear-gradient(to bottom, #4F6D93, #FFFFFF) no-repeat #4F6D93;
     color: #666666;
 }
-
 dt {
     color: #000033;
 }
-
 footer {
     background: #000000;
     color: #FFFFFF;
@@ -31,6 +26,8 @@ footer {
     font-family: Georgia, "Times New Roman", Serif;
 }
 
+
+/*=========== LOGOS ==========*/
 #salonLogo {
     height: 90px;
     width: 220px;
@@ -38,23 +35,14 @@ footer {
     margin-left: 10px;
     border: solid 3px #D40C0C;
 }
-#fblogo {
-    float: right;
-    height: 30px;
-    padding-right: 10px;
-    padding-top: 30px;
-}
-#twlogo {
+.sociallogo {
     float: right;
     height: 30px;
     padding-right: 10px;
     padding-top: 30px;
 }
 #yplogo {
-    float: right;
-    height: 30px;
     padding-right: 20px;
-    padding-top: 30px;
 }
 #slogan {
     margin-right: 260px;
@@ -65,7 +53,14 @@ footer {
     color: #B09A00;
     font-family: "Marck Script", cursive;
 }
-
+header {
+    font-family: Arial, helvetica, sans-serif;
+    color: #FFFFFF;
+    height: 110px;
+    padding-top: 10px;
+    background: #000000;
+    border-bottom: 4px solid #D00000;
+}
 /*#contactHead {
     margin-right: 12px;
     margin-top: 10px;
@@ -75,70 +70,21 @@ footer {
     font-family: Arial, helvetica, sans-serif;
 }*/
 
-header {
-    font-family: Arial, helvetica, sans-serif;
-    color: #FFFFFF;
-    height: 110px;
-    padding-top: 10px;
-    background: #000000;
-    border-bottom: 4px solid #D00000;
-}
-
-
 
 h1 {
     margin-top: 0;
     margin-bottom: 0;
     font-family: Georgia, "Times New Roman", Serif;
 }
-
 h2 {
-    color: #3399CC;
-    box-shadow: 1px 1px 1px #cccccc;
+    color: #000000;
     font-family: Georgia, "Times New Roman", Serif;
 }
-
 h3 {
     font-family: Georgia, "Times New Roman", Serif;
     color: #000000;
 }
-
-
-#salonBuilding {
-    margin: 40px 190px 10px 190px;
-    height: 500px;
-    background: url("assets/salon_central/salon_central_withADS.png") no-repeat;
-    background-size: 100% 100%;
-    border: solid 1px #000000;
-    box-shadow: 3px 3px 3px #333333;
-}
-
-main {
-    margin-left: 190px;
-    margin-right: 190px;
-    height:840px;
-    background: #000000;
-    padding: 1px 20px 20px 30px;
-    display:block;
-}
-
-
-main_about {
-    background-color: #000000;
-    margin-left: 190px;
-    margin-right: 190px;
-    height:auto;
-    padding: 1px 20px 20px 30px;
-    display:block;
-}
-.aboutDivID {
-    background: url("assets/background_img/vintage-concrete.png") repeat;
-    margin: 40px 10px 0 10px;
-    border: 1px solid black;
-    box-shadow: 4px 4px 14px 2px #A9A9A9;
-    height: auto;
-}
-#aboutH1 {
+.pageH1 {
     font-size: 48px;
     text-align: center;
     padding: 30px 0 0 0;
@@ -146,6 +92,51 @@ main_about {
     color: transparent;
     text-shadow: 0px 3px 4px rgba(255,255,255,0.5);
     -webkit-background-clip: text;
+}
+#salonBuilding {
+    margin: 40px 190px 10px 190px;
+    height: 500px;
+    background: url("assets/salon_central/building/salon_central_withADS.png") no-repeat;
+    background-size: 100% 100%;
+    border: solid 1px #000000;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+
+/*=========== MAIN CONTENT ==========*/
+main {
+    margin-left: 190px;
+    margin-right: 190px;
+    height:auto;
+    padding: 1px 20px 20px 30px;
+    display:block;
+}
+#main_home {
+    background: #000000;
+}
+#main_about {
+    background-color: #000000;
+}
+#main_special {
+    background: #FFFFFF;
+    padding-bottom: 640px;
+}
+#main_contact {
+    background: #FFFFFF;
+    padding-bottom: 80px;
+}
+#main_locations {
+    background: #FFFFFF;
+}
+
+
+/*=========== ABOUT US PAGE ==========*/
+.aboutDivID {
+    background: url("assets/background_img/vintage-concrete.png") repeat;
+    margin: 40px 10px 0 10px;
+    border: 3px solid #6A0000;
+    box-shadow: 4px 4px 14px 2px #A9A9A9;
+    height: auto;
 }
 #aboutH2 {
     margin: 20px 40px 0 40px;
@@ -165,7 +156,7 @@ main_about {
     padding-bottom: 60px;
     background: url("assets/background_img/vintage-concrete.png") repeat;
     margin: 40px 10px 0 10px;
-    border: 1px solid black;
+    border: 3px solid #6A0000;
     box-shadow: 4px 4px 14px 2px #A9A9A9;
 }
 #aboutSocial_H2 {
@@ -198,14 +189,13 @@ main_about {
     padding: 10px 0 10px 20px;
     height: 100px;
 }
-
 .aboutLocationsBG {
     height: auto;
     padding-top: 20px;
     padding-bottom: 400px;
     background: url("assets/background_img/vintage-concrete.png") repeat;
     margin: 40px 10px 10px 10px;
-    border: 1px solid black;
+    border: 3px solid #6A0000;
     box-shadow: 4px 4px 14px 2px #A9A9A9;
 }
 #aboutLocationText {
@@ -232,7 +222,7 @@ main_about {
     margin: 20px 20px 0 20px;
     background-size: 100% 100%;
 }
-#locationsButtonPhx {
+.locationsButton {
     margin: 20px 20px 0 20px;
     background-color: #D40C0C;
     box-shadow: 2px 5px 10px black;
@@ -248,7 +238,6 @@ main_about {
     box-shadow: none;
     top: 5px;
 }
-
 #aboutPeoriaDiv {
     float: left;
     margin: 0 0 0 0;
@@ -261,15 +250,6 @@ main_about {
     margin: 20px 20px 0 20px;
     background-size: 100% 100%;
 }
-#locationsButtonPeoria {
-    margin: 20px 20px 0 20px;
-    background-color: #D40C0C;
-    box-shadow: 2px 5px 10px black;
-    color: white;
-    padding: .5em 1em;
-    position: relative;
-    text-decoration: none;
-}
 #locationsButtonPeoria:hover {
     background-color: #ce0606;
 }
@@ -279,21 +259,209 @@ main_about {
 }
 
 
-main_contact {
-    background-color: #ffffff;
-    margin: 0 190px 0 190px;
-    height: auto;
-    padding: 1px 20px 80px 30px;
-    display:block;
+/*=========== SPECIALS PAGE ==========*/
+.specialDivID {
+    background: url("assets/background_img/concrete-texture.png") repeat;
+    margin: 40px 10px 0 10px;
+    border: 3px solid #6A0000;
+    box-shadow: 3px 3px 30px 1px #333333;
+    padding-bottom: 200px;
 }
+#specConcreteDiv1 {
+    height: 220px;
+}
+#specialMainDiv {
+    margin: 0 30px 0 10px;
+}
+#specialH3 {
+    margin: 20px;
+    font-size: 24px;
+}
+#specialImgMain {
+    background: url("assets/salon_central/suites/saloncentral-proofs- (50 of 58).jpg") repeat;
+    background-size: 100% 100%;
+    float: left;
+    height: 240px;
+    width: 340px;
+    margin: 40px 30px 0 20px ;
+}
+#specialTextMain {
+    font-size: 17px;
+    color: #000;
+}
+#specConcreteDiv2 {
+    float: left;
+    height: 60px;
+    width: 430px;
+    margin-right: 16px;
+    padding-right: 0;
+}
+.basicSpecialImg {
+    box-shadow: 0 10px 40px black;
+    border-radius: 20px;
+    border: 2px solid #000000;
+    float: left;
+    height: 160px;
+    width: 120px;
+    margin: 20px 16px 0 20px;
+}
+#ourSpecialImg {
+    background: url("assets/salon_central/building/salon_central_render-75.jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#ourSpecialsH4 {
+    font-size: 28px;
+    margin: 20px 20px 0 0;
+    color: #D00000;
+}
+#specConcreteDiv2 ul {
+    color: #000000;
+    margin: 10px 0 0 140px;
+    font-size: 20px;
+}
+#ourSpecContactH5 {
+    font-size: 18px;
+    text-align: center;
+    color: #D00000;
+}
+#specConcreteDiv3 {
+    float: left;
+    height: 60px;
+    width: 430px;
+    margin-right: 0;
+    padding-right: 0;
+}
+#furnishedImg {
+    background: url("assets/salon_central/suites/saloncentral-proofs- (2 of 58).jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#furnishedH4 {
+    font-size: 26px;
+    margin: 20px 20px 0 0;
+    color: #000000;
+}
+#specConcreteDiv3 ul {
+    color: #000000;
+    margin: 6px 0 0 140px;
+    font-size: 18px;
+}
+#furnishedP {
+    font-size: 18px;
+    text-align: center;
+    color: #D00000;
+}
+#specConcreteDiv4 {
+    float: left;
+    height: 20px;
+    width: 430px;
+    margin-right: 16px;
+    padding-right: 0;
+}
+#amenitiesImg {
+    background: url("assets/salon_central/suites/saloncentral-proofs- (46 of 58).jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#amenitiesH4 {
+    font-size: 26px;
+    margin: 20px 20px 0 0;
+    color: #000000;
+}
+#specConcreteDiv4 ul {
+    color: #000000;
+    margin: 6px 0 0 140px;
+    font-size: 16px;
+}
+#amenitiesP {
+    font-size: 18px;
+    text-align: center;
+    color: #D00000;
+}
+#specConcreteDiv5 {
+    float: left;
+    height: 20px;
+    width: 430px;
+    margin-right: 0;
+    padding-right: 0;
+}
+#perfectImg {
+    background: url("assets/salon_central/suites/saloncentral-proofs- (33 of 58).jpg") no-repeat;
+    background-size: 100% 100%;
+}
+#perfectH4 {
+    font-size: 26px;
+    margin: 20px 20px 0 0;
+    color: #000000;
+}
+#specConcreteDiv5 ul {
+    color: #000000;
+    margin: 6px 0 0 140px;
+    font-size: 16px;
+}
+#perfectP {
+    font-size: 18px;
+    text-align: center;
+    color: #D00000;
+}
+
+
+
+/*=========== LOCATION PAGE ==========*/
+.titleLoc {
+    font-size: 18px;
+    color: #000000;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+}
+#locationsH1 {
+    margin-bottom: 40px;
+}
+#addressTitle {
+    margin-right: 0;
+    padding: 10px 220px 10px 20px;
+}
+#mapsTitle {
+    margin-left: 0;
+    padding: 10px 380px 10px 20px;
+}
+
+.locationsDivs {
+    height: 400px;
+}
+
+.locDiv {
+    float: left;
+    width: 390px;
+    margin-right: 0;
+}
+.locationsH2 {
+    padding: 60px 20px 10px 0;
+    border-bottom: 1px solid #333333;
+}
+.contactP {
+    color: #000;
+    font-size: 18px;
+    font-family: Georgia, palatino,'book antiqua','palatino linotype',serif;
+}
+
+.mapsImg1 {
+    background-size: 100% 100%;
+    float: left;
+    margin: 80px 10px 0 10px;
+    height: 300px;
+    width: 500px;
+    frameborder: 0;
+    style:"border:0";
+}
+
+
+
+
+
+
+
+/*=========== CONTACT PAGE ==========*/
 #contactH1 {
     font-size: 38px;
-    text-align: center;
-    padding: 30px 0 0 0;
-    background-color: #000000;
-    color: transparent;
-    text-shadow: 0px 3px 4px rgba(255,255,255,0.5);
-    -webkit-background-clip: text;
 }
 #contactH3 {
     font-size: 18px;
@@ -328,8 +496,7 @@ main_contact {
 #dropDownReason {
     font-size: 16px;
 }
-
-.contactImgDiv {
+.basicImgDiv {
     height: 300px;
     width: 380px;
     margin: 20px 40px 0 0;
@@ -345,8 +512,23 @@ main_contact {
     background: url("assets/salon_central/suites/saloncentral-proofs- (26 of 58).jpg") no-repeat;
     background-size: 100% 100%;
 }
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 4px;
+}
+input, textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+input [type="submit"] {
+    margin-left: 130px;
+}
 
 
+/*=========== HOME PAGE ==========*/
 #furnishedBox {
     float:left;
     margin:10px 0 10px 10px;
@@ -385,8 +567,6 @@ main_contact {
     padding-bottom: 10px;
     border-bottom: solid 2px #333333;
 }
-
-
 #testDivID {
     margin-top: 20px;
     height:280px;
@@ -414,127 +594,31 @@ main_contact {
     max-width:620px;
     float:left;
     margin: 0 0 0 40px;
-} #test1ID {
-        float: left;
-        width: 290px;
-        max-width:290px;
-} #test1TextID {
-        color: #000000;
-        margin-top: 0;
-        font-size: 12px;
-        font-family: "Times New Roman", Arial, sans-serif;
-        font-style: italic;
-} #test2ID {
-        float:left;
-        width: 300px;
-        max-width:300px;
-} #test2TextID {
-        color: #000000;
-        margin: 0 0 0 20px;
-        font-size: 12px;
-        font-family: "Times New Roman", Arial, sans-serif;
-        font-style: italic;
-    }
-
-
-nav {
-    margin-top: 20px;
+}
+#test1ID {
     float: left;
-    width: 160px;
-    font-weight: bold;
-    padding: 20px;
+    width: 290px;
+    max-width:290px;
 }
-
-nav li {
-    color: #FFFFFF;
-    border-bottom: solid 2px #000000;
-    padding-bottom: 0.25em;
-    padding-top: 0.25em;
-}
-
-nav a {
-    text-decoration: none;
-}
-nav a:link {
-    color: #FFFFFF;
-}
-nav a:visited {
-    color: #FFFFFF;
-}
-nav a:hover {
+#test1TextID {
     color: #000000;
+    margin-top: 0;
+    font-size: 12px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding-left: 0;
-    font-size: 1.2em;
+#test2ID {
+    float:left;
+    width: 300px;
+    max-width:300px;
 }
-#navhome {
-    border-top: 2px solid #000000;
+#test2TextID {
+    color: #000000;
+    margin: 0 0 0 20px;
+    font-size: 12px;
+    font-family: "Times New Roman", Arial, sans-serif;
+    font-style: italic;
 }
-
-.resort {
-    font-weight: bold;
-    color: #5C7FA3;
-}
-
-table {
-    border: 1px solid #3399CC;
-    width: 80%;
-    border-spacing: 0;
-}
-
-td, th {
-    padding: 5px;
-    border: 1px solid #3399CC;
-}
-td {
-    text-align: center;
-}
-
-.text {
-    text-align: left;
-}
-
-tr:nth-of-type(odd) {
-    background-color: #F5FAFC;
-}
-
-
-#wrapper {
-    width: 80%;
-    background: linear-gradient(to bottom, #D40C0C, #0C034A) no-repeat #0C034A;
-    /*background-color: #130864;*/
-    min-width: 1350px;
-    max-width: 2048px;
-    margin: auto;
-    box-shadow: 3px 3px 3px #333333;
-}
-#wrapper_aboutUs {
-
-}
-
-
-label {
-    float: left;
-    display: block;
-    text-align: right;
-    width: 120px;
-    padding-right: 4px;
-}
-
-input, textarea {
-    display: block;
-    margin-bottom: 20px;
-}
-
-input [type="submit"] {
-    margin-left: 130px;
-}
-
-
 .infoButton {
     text-decoration: none;
     margin-top: 4px;
@@ -573,13 +657,89 @@ input [type="submit"] {
        background: rgba(0,0,0,.15);
        box-shadow: 0 -1px 2px 0 rgba(0,0,0,.15);
    }
+#testimonialsID {
+    margin-top: 6px;
+}
 
-   #testimonialsID {
-       margin-top: 6px;
-   }
+
+/*=========== NAV BAR CONTENT ==========*/
+nav {
+    margin-top: 20px;
+    float: left;
+    width: 160px;
+    font-weight: bold;
+    padding: 20px;
+}
+nav li {
+    color: #FFFFFF;
+    border-bottom: solid 2px #000000;
+    padding-bottom: 0.25em;
+    padding-top: 0.25em;
+}
+nav a {
+    text-decoration: none;
+}
+nav a:link {
+    color: #FFFFFF;
+}
+nav a:visited {
+    color: #FFFFFF;
+}
+nav a:hover {
+    color: #000000;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    font-size: 1.2em;
+}
+#navhome {
+    border-top: 2px solid #000000;
+}
+
+/*
+.resort {
+    font-weight: bold;
+    color: #5C7FA3;
+}*/
 
 
-/*Tablet Media Display*/
+/*=========== TABLE CONTENT ==========*/
+table {
+    border: 1px solid #3399CC;
+    width: 80%;
+    border-spacing: 0;
+}
+td, th {
+    padding: 5px;
+    border: 1px solid #3399CC;
+}
+td {
+    text-align: center;
+}
+.text {
+    text-align: left;
+}
+tr:nth-of-type(odd) {
+    background-color: #F5FAFC;
+}
+
+
+/*=========== WRAPPER ==========*/
+#wrapper {
+    width: 80%;
+    background: linear-gradient(to bottom, #D40C0C, #0C034A) no-repeat #0C034A;
+    /*background-color: #130864;*/
+    min-width: 1350px;
+    max-width: 2048px;
+    margin: auto;
+    box-shadow: 3px 3px 3px #333333;
+}
+
+
+/*
+!*Tablet Media Display*!
 @media only screen and (max-width: 64em) {
     body {
         margin:0;
@@ -656,7 +816,7 @@ input [type="submit"] {
     }
 }
 
-/*Smartphone Media Display*/
+!*Smartphone Media Display*!
 @media only screen and (max-width: 37.5em) {
     header {
         padding-top: 1em;
@@ -712,4 +872,4 @@ input [type="submit"] {
         display: none;
     }
 
-}
+}*/
