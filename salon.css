@@ -128,6 +128,9 @@ main {
 #main_locations {
     background: #FFFFFF;
 }
+#main_gallery {
+    background: #000000;
+}
 
 
 /*=========== ABOUT US PAGE ==========*/
@@ -278,7 +281,7 @@ main {
     font-size: 24px;
 }
 #specialImgMain {
-    background: url("assets/salon_central/suites/saloncentral-proofs- (50 of 58).jpg") repeat;
+    background: url("assets/salon_central/suites/suite_50.jpg") repeat;
     background-size: 100% 100%;
     float: left;
     height: 240px;
@@ -332,7 +335,7 @@ main {
     padding-right: 0;
 }
 #furnishedImg {
-    background: url("assets/salon_central/suites/saloncentral-proofs- (2 of 58).jpg") no-repeat;
+    background: url("assets/salon_central/suites/suite_2.jpg") no-repeat;
     background-size: 100% 100%;
 }
 #furnishedH4 {
@@ -358,7 +361,7 @@ main {
     padding-right: 0;
 }
 #amenitiesImg {
-    background: url("assets/salon_central/suites/saloncentral-proofs- (46 of 58).jpg") no-repeat;
+    background: url("assets/salon_central/suites/suite_46.jpg") no-repeat;
     background-size: 100% 100%;
 }
 #amenitiesH4 {
@@ -384,7 +387,7 @@ main {
     padding-right: 0;
 }
 #perfectImg {
-    background: url("assets/salon_central/suites/saloncentral-proofs- (33 of 58).jpg") no-repeat;
+    background: url("assets/salon_central/suites/suite_33.jpg") no-repeat;
     background-size: 100% 100%;
 }
 #perfectH4 {
@@ -442,7 +445,6 @@ main {
     font-size: 18px;
     font-family: Georgia, palatino,'book antiqua','palatino linotype',serif;
 }
-
 .mapsImg1 {
     background-size: 100% 100%;
     float: left;
@@ -452,6 +454,149 @@ main {
     frameborder: 0;
     style:"border:0";
 }
+#socialDiv {
+    margin-top: 40px;
+    padding-top: 40px;
+    height:280px;
+    background-color: #000000;
+}
+.socialP {
+    color: #777777;
+    padding: 20px 0 20px 10px;
+    font-style: italic;
+    text-align: left;
+    font-size: 20px;
+}
+.socialA {
+    text-decoration: none;
+}
+.socialLinkDiv {
+    height: 19px;
+    width: 300px;
+    margin-left: 300px;
+    padding-bottom: 10px;
+}
+#fbLink {
+    border-top: 1px solid #333333;
+}
+#twLink {
+    border-top: 1px solid #333333;
+}
+#ypLink {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+}
+.socialPic {
+    float:right;
+    margin-top: 14px;
+    margin-right: 20px;
+    height: 40px;
+    width: 40px;
+}
+#fbPic {
+    background: url("assets/salon_central/logos/facebook-logo-BW2.png");
+    background-size: 100% 100%;
+}
+#twPic {
+    background: url("assets/salon_central/logos/twitter-bird-141023623248gkn.png");
+    background-size: 100% 100%;
+}
+#ypPic {
+    background: url("assets/salon_central/logos/yelp-white.png");
+    background-size: 100% 100%;
+    margin-top: 7px;
+    margin-right: 16px;
+    height: 50px;
+    width: 50px;
+}
+
+
+
+/*=========== GALLERY PAGE ==========*/
+#galleryDivID {
+    padding-bottom: 30px;
+}
+#slideshowDivID {
+    width: 728px;
+    margin: 0 auto 0 auto;
+}
+#galleryH2 {
+    margin: 20px 10px 0 10px;
+    color: #000000;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/*Slide Show*/
+.container {
+    background: #6A0000;
+    width: 728px;
+    margin: 40px auto 10px auto;
+    padding: 3px 3px 3px 3px;
+}
+.slideWrapper {
+    width: 728px;
+    height: 510px;
+    overflow: hidden;
+}
+.slideshow {
+    width: 2912px;
+    height: 540px;
+    margin: 0 0 0 -1456px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-webkit-animation-direction: normal;
+    -moz-webkit-animation-direction: normal;
+    -ms-webkit-animation-direction: normal;
+    -o-webkit-animation-direction: normal;
+    -khtml-webkit-animation-direction: normal;
+    webkit-animation-direction: normal;
+    -webkit-animation-play-state: running;
+}
+.slide {
+    width: 728px;
+    height: 510px;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.slideshow img {
+    width: 728px;
+    height: 510px;
+}
+@-webkit-keyframes slide_animation {
+    0% {left: 0px;}
+    10% {left: 728px;}
+    20% {left: 728px;}
+    30% {left: 728px;}
+    40% {left: 728px;}
+    50% {left: 728px;}
+    60% {left: 728px;}
+    70% {left: 1456px;}
+    80% {left: 1456px;}
+    90% {left: 1456px;}
+    100% {left: 1456px;}
+}
+#videoTextDivID {
+    width: 728px;
+    height: auto;
+    margin: 10px auto 40px auto;
+}
+video {
+    margin: 40px auto 0 96px;
+    width: 728px;
+}
+#videoP {
+    margin: 10px auto 0 auto;
+    color: #000000;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
 
 
 
@@ -505,11 +650,11 @@ main {
     box-shadow: 0 10px 80px black;
 }
 #contactImg1 {
-    background: url("assets/salon_central/suites/saloncentral-proofs- (44 of 58).jpg") no-repeat;
+    background: url("assets/salon_central/suites/suite_44.jpg") no-repeat;
     background-size: 100% 100%;
 }
 #contactImg2 {
-    background: url("assets/salon_central/suites/saloncentral-proofs- (26 of 58).jpg") no-repeat;
+    background: url("assets/salon_central/suites/suite_26.jpg") no-repeat;
     background-size: 100% 100%;
 }
 label {
@@ -664,7 +809,7 @@ input [type="submit"] {
 
 /*=========== NAV BAR CONTENT ==========*/
 nav {
-    margin-top: 20px;
+    margin: 20px 10px 0 0;
     float: left;
     width: 160px;
     font-weight: bold;
