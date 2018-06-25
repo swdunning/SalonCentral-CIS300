@@ -131,7 +131,9 @@ main {
 #main_gallery {
     background: #000000;
 }
-
+#main_directory {
+    background: #000000;
+}
 
 /*=========== ABOUT US PAGE ==========*/
 .aboutDivID {
@@ -517,7 +519,7 @@ main {
     padding-bottom: 30px;
 }
 #slideshowDivID {
-    width: 728px;
+    width: 894px;
     margin: 0 auto 0 auto;
 }
 #galleryH2 {
@@ -525,28 +527,29 @@ main {
     color: #000000;
     padding-top: 10px;
     text-align: center;
+    font-style: italic;
     font-size: 18px;
 }
 
 /*Slide Show*/
 .container {
     background: #6A0000;
-    width: 728px;
+    width: 894px;
     margin: 40px auto 10px auto;
     padding: 3px 3px 3px 3px;
 }
 .slideWrapper {
-    width: 728px;
-    height: 510px;
+    width: 894px;
+    height: 580px;
     overflow: hidden;
 }
 .slideshow {
-    width: 2912px;
-    height: 540px;
-    margin: 0 0 0 -1456px;
+    width: 3576px;
+    height: 580px;
+    margin: 0 0 0 -1788px;
     position: relative;
     -webkit-animation-name: slide_animation;
-    -webkit-animation-duration: 20s;
+    -webkit-animation-duration: 18s;
     -webkit-animation-iteration-count:infinite;
     -webkit-webkit-animation-direction: normal;
     -moz-webkit-animation-direction: normal;
@@ -557,50 +560,63 @@ main {
     -webkit-animation-play-state: running;
 }
 .slide {
-    width: 728px;
-    height: 510px;
+    width: 894px;
+    height: 580px;
     position: relative;
     float: left;
     overflow: hidden;
 }
 .slideshow img {
-    width: 728px;
-    height: 510px;
+    width: 894px;
+    height: 580px;
 }
 @-webkit-keyframes slide_animation {
-    0% {left: 0px;}
-    10% {left: 728px;}
-    20% {left: 728px;}
-    30% {left: 728px;}
-    40% {left: 728px;}
-    50% {left: 728px;}
-    60% {left: 728px;}
-    70% {left: 1456px;}
-    80% {left: 1456px;}
-    90% {left: 1456px;}
-    100% {left: 1456px;}
+    0% {left: 0;}
+    5% {left: 0;}
+    10% {left: 0;}
+    10% {left: 894px;}
+    15% {left: 894px;}
+    20% {left: 894px;}
+    25% {left: 894px;}
+    30% {left: 894px;}
+    35% {left: 894px;}
+    40% {left: 894px;}
+    45% {left: 894px;}
+    50% {left: 894px;}
+    55% {left: 894px;}
+    60% {left: 894px;}
+    65% {left: 894px;}
+    70% {left: 894px;}
+    75% {left: 1788px;}
+    80% {left: 1788px;}
+    85% {left: 1788px;}
+    90% {left: 1788px;}
+    95% {left: 1788px;}
+    100% {left: 1788px;}
 }
 #videoTextDivID {
-    width: 728px;
+    width: 894px;
     height: auto;
-    margin: 10px auto 40px auto;
+    margin: auto;
 }
 video {
-    margin: 40px auto 0 96px;
-    width: 728px;
+    margin: 40px auto 0 14px;
+    width: 894px;
 }
 #videoP {
     margin: 10px auto 0 auto;
     color: #000000;
     padding-top: 10px;
     text-align: center;
+    font-style: italic;
     font-size: 18px;
 }
 
+/*=========== DIRECTORY PAGE ==========*/
 
-
-
-
+#directoryConcreteDiv1 {
+    box-shadow: 3px 3px 30px 1px #fff;
+}
 
 
 
@@ -812,7 +828,6 @@ nav {
     margin: 20px 10px 0 0;
     float: left;
     width: 160px;
-    font-weight: bold;
     padding: 20px;
 }
 nav li {
@@ -830,7 +845,7 @@ nav a:link {
 nav a:visited {
     color: #FFFFFF;
 }
-nav a:hover {
+nav a:hover .dropdown:hover .dropbtn{
     color: #000000;
 }
 nav ul {
@@ -842,6 +857,69 @@ nav ul {
 #navhome {
     border-top: 2px solid #000000;
 }
+
+
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+#dropBorder {
+    border-bottom: solid 2px #000000;
+    width: 160px;
+}
+
+.dropdown .dropbtn {
+    margin: 4px 0 4px 0;
+    padding-left: 0;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: inherit;
+    font-family: inherit;
+}
+
+.dropdown-content {
+    display: none;
+    position: inherit;
+    background-color: #000;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*#contactNav {
+    padding-top: 4px;
+    width: 80px;
+    border-top: solid 2px #000000;
+}*/
+
+
+
+
+
+
+
+
 
 /*
 .resort {
