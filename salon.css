@@ -1,3 +1,4 @@
+/*=========== REGULAR WEB CONTENT ==========*/
 header, main, nav, footer, figure, figcaption, aside, section, article {
     display: block;
 }
@@ -61,16 +62,6 @@ header {
     background: #000000;
     border-bottom: 4px solid #D00000;
 }
-/*#contactHead {
-    margin-right: 12px;
-    margin-top: 10px;
-    float: right;
-    font-size: 12px;
-    color: #FFFFFF;
-    font-family: Arial, helvetica, sans-serif;
-}*/
-
-
 h1 {
     margin-top: 0;
     margin-bottom: 0;
@@ -103,6 +94,7 @@ h3 {
 }
 
 
+
 /*=========== MAIN CONTENT ==========*/
 main {
     margin-left: 190px;
@@ -131,9 +123,10 @@ main {
 #main_gallery {
     background: #000000;
 }
-#main_directory {
+.main_directory {
     background: #000000;
 }
+
 
 /*=========== ABOUT US PAGE ==========*/
 .aboutDivID {
@@ -428,11 +421,9 @@ main {
     margin-left: 0;
     padding: 10px 380px 10px 20px;
 }
-
 .locationsDivs {
     height: 400px;
 }
-
 .locDiv {
     float: left;
     width: 390px;
@@ -530,8 +521,7 @@ main {
     font-style: italic;
     font-size: 18px;
 }
-
-/*Slide Show*/
+/*===Slide Show====*/
 .container {
     background: #6A0000;
     width: 894px;
@@ -612,10 +602,100 @@ video {
     font-size: 18px;
 }
 
-/*=========== DIRECTORY PAGE ==========*/
 
+/*=========== DIRECTORY PAGE ==========*/
 #directoryConcreteDiv1 {
+    padding-bottom: 30px;
     box-shadow: 3px 3px 30px 1px #fff;
+}
+#directoryTextMain {
+    font-size: 17px;
+    color: #000;
+    padding-top: 0;
+    margin: 10px 0  0 20px;
+}
+#directoryConcreteDiv2 {
+    padding: auto;
+}
+/*=== TABLE CONTENT (Directory) ===*/
+table {
+    margin: 40px 0 0 24px;
+    border-top: 4px solid #D00000;
+    border-bottom: 4px solid #D00000;
+    width: 94%;
+    border-spacing: 0;
+}
+td, th {
+    padding: 5px;
+    border-top: 4px solid #D00000;
+    border-bottom: 4px solid #D00000;
+}
+td {
+    text-align: center;
+}
+tr:nth-of-type(odd) {
+    background-color: #444444;
+}
+.imgRowDark {
+    vertical-align: top;
+    width:160px;
+    padding: 20px 0 0 20px;
+}
+.directoryImg {
+    float:left;
+    background-size: 100% 100%;
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
+}
+.suiteNumLabelDark {
+    margin: 6px 0 0 4px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.hairPeoriaH1 {
+    font-size: 32px;
+}
+.midCol {
+    text-align: left;
+    vertical-align: top;
+    width: 320px;
+    padding-right: 40px;
+}
+.darkMidCol {
+    color: #fff;
+}
+.directoryH1 {
+    padding: 14px 0 0 0;
+    margin: 0;
+    font-size: 28px;
+}
+.nameH4 {
+    font-size: 18px;
+    margin: 6px 0 0 0;
+    padding-top: 0;
+}
+.directoryDescription {
+    font-size: 14px;
+}
+.nameDarkH4 {
+    color: #ffffff;
+}
+.contactColDark {
+    color: #FFFFFF;
+    text-align: left;
+    vertical-align: top;
+    font-style: italic;
+}
+.lightMidCol, .contactLightP {
+    color: #000000;
+}
+.suiteNumLabelLight {
+    margin: 6px 0 0 0;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
 }
 
 
@@ -823,6 +903,7 @@ input [type="submit"] {
 }
 
 
+
 /*=========== NAV BAR CONTENT ==========*/
 nav {
     margin: 20px 10px 0 0;
@@ -845,7 +926,7 @@ nav a:link {
 nav a:visited {
     color: #FFFFFF;
 }
-nav a:hover .dropdown:hover .dropbtn{
+nav a:hover{
     color: #000000;
 }
 nav ul {
@@ -857,10 +938,6 @@ nav ul {
 #navhome {
     border-top: 2px solid #000000;
 }
-
-
-
-
 .dropdown {
     float: left;
     overflow: hidden;
@@ -869,7 +946,6 @@ nav ul {
     border-bottom: solid 2px #000000;
     width: 160px;
 }
-
 .dropdown .dropbtn {
     margin: 4px 0 4px 0;
     padding-left: 0;
@@ -880,7 +956,6 @@ nav ul {
     background-color: inherit;
     font-family: inherit;
 }
-
 .dropdown-content {
     display: none;
     position: inherit;
@@ -889,7 +964,6 @@ nav ul {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
-
 .dropdown-content a {
     float: none;
     color: black;
@@ -898,7 +972,6 @@ nav ul {
     display: block;
     text-align: left;
 }
-
 .dropdown-content a:hover {
     background-color: #fff;
     color: #000;
@@ -915,40 +988,6 @@ nav ul {
 
 
 
-
-
-
-
-
-
-/*
-.resort {
-    font-weight: bold;
-    color: #5C7FA3;
-}*/
-
-
-/*=========== TABLE CONTENT ==========*/
-table {
-    border: 1px solid #3399CC;
-    width: 80%;
-    border-spacing: 0;
-}
-td, th {
-    padding: 5px;
-    border: 1px solid #3399CC;
-}
-td {
-    text-align: center;
-}
-.text {
-    text-align: left;
-}
-tr:nth-of-type(odd) {
-    background-color: #F5FAFC;
-}
-
-
 /*=========== WRAPPER ==========*/
 #wrapper {
     width: 80%;
@@ -961,6 +1000,7 @@ tr:nth-of-type(odd) {
 }
 
 
+/*=========== SMART PHONE AND TABLET (left in for future development) ==========*/
 /*
 !*Tablet Media Display*!
 @media only screen and (max-width: 64em) {
